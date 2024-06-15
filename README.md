@@ -17,7 +17,8 @@ cd Sml
 executar:
 tem 2 ferramentas nesse repertório e pode ser utilizadas individualmente:
 ```bash
-hggh.py
+attack.py
+SC.py
 ```
 
 ## Contribuição
