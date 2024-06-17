@@ -74,28 +74,28 @@ def simulate_social_media_attack():
 
     if choice in targets:
         clear_screen()
-        user_info = input(f"Digite o nome de usuário, núme>
+        user_info = input(f"Digite o nome de usuário, número de telefone ou e-mail para o ataque em {targets[choice]}: ")
         print(f"Iniciando ataque em {targets[choice]}...")
         time.sleep(2)
-        print(f"Coletando informações de {user_info} no {t>
+        print(f"Coletando informações de {user_info} no {targets[choice]}...")
         time.sleep(3)
-        print(f"Explorando vulnerabilidades em {user_info}>
+        print(f"Explorando vulnerabilidades em {user_info} no {targets[choice]}...")
         time.sleep(3)
-        print(f"Ataque simulado em {user_info} no {targets>
+        print(f"Ataque simulado em {user_info} no {targets[choice]}...")
         time.sleep(2)
-        print(f"Obtendo informações de {user_info} no {tar>
+        print(f"Obtendo informações de {user_info} no {targets[choice]}...")
         time.sleep(3)
 
-# Lista de vítimas fictícias
+        # Lista de vítimas fictícias
         fake_victims = [
             {
                 "Nome Completo": "João Silva",
                 "Data de Nascimento": "01/01/1990",
                 "Número de Telefone": "+55 11 91234-5678",
                 "E-mail": "joao.silva@example.com",
-                "Endereço": "Rua Exemplo, 123, São Paulo, >
+                "Endereço": "Rua Exemplo, 123, São Paulo, SP",
                 "Senha": "senha123",
-                "Número do Cartão de Crédito": "1234 5678 >
+                "Número do Cartão de Crédito": "1234 5678 9012 3456",
                 "Data de Expiração": "12/25",
                 "CVV": "123"
             },
@@ -104,9 +104,9 @@ def simulate_social_media_attack():
                 "Data de Nascimento": "15/05/1985",
                 "Número de Telefone": "+55 21 98765-4321",
                 "E-mail": "maria.oliveira@example.com",
-                "Endereço": "Avenida Central, 456, Rio de >
+                "Endereço": "Avenida Central, 456, Rio de Janeiro, RJ",
                 "Senha": "minhasenha",
-                "Número do Cartão de Crédito": "6543 2109 >
+                "Número do Cartão de Crédito": "6543 2109 8765 4321",
                 "Data de Expiração": "11/24",
                 "CVV": "456"
             },
@@ -115,9 +115,9 @@ def simulate_social_media_attack():
                 "Data de Nascimento": "23/03/1975",
                 "Número de Telefone": "+55 31 99876-5432",
                 "E-mail": "carlos.pereira@example.com",
-                "Endereço": "Rua das Flores, 789, Belo Hor>
+                "Endereço": "Rua das Flores, 789, Belo Horizonte, MG",
                 "Senha": "segredinho",
-                "Número do Cartão de Crédito": "1122 3344 >
+                "Número do Cartão de Crédito": "1122 3344 5566 7788",
                 "Data de Expiração": "10/23",
                 "CVV": "789"
             },
@@ -126,15 +126,15 @@ def simulate_social_media_attack():
                 "Data de Nascimento": "30/08/1995",
                 "Número de Telefone": "+55 41 92345-6789",
                 "E-mail": "ana.costa@example.com",
-                "Endereço": "Praça da Liberdade, 101, Curi>
+                "Endereço": "Praça da Liberdade, 101, Curitiba, PR",
                 "Senha": "senha789",
-                "Número do Cartão de Crédito": "4433 2211 >
+                "Número do Cartão de Crédito": "4433 2211 5566 7788",
                 "Data de Expiração": "09/26",
                 "CVV": "321"
             }
         ]
 
-# Seleciona uma vítima aleatória
+        # Seleciona uma vítima aleatória
         victim = random.choice(fake_victims)
 
         for key, value in victim.items():
@@ -167,16 +167,16 @@ def simulate_wifi_attack():
 
     if choice in attacks:
         clear_screen()
-        print(f"Iniciando ataque em rede {attacks[choice]}>
+        print(f"Iniciando ataque em rede {attacks[choice]}...")
         time.sleep(2)
-        print(f"Escaneando redes {attacks[choice]} disponí>
+        print(f"Escaneando redes {attacks[choice]} disponíveis...")
         time.sleep(3)
-        print(f"Explorando vulnerabilidades em redes {atta>
+        print(f"Explorando vulnerabilidades em redes {attacks[choice]}...")
         time.sleep(3)
-        print(f"Ataque em rede {attacks[choice]} simulado >
+        print(f"Ataque em rede {attacks[choice]} simulado concluído.")
         time.sleep(2)
 
-# Informações simuladas sobre redes
+        # Informações simuladas sobre redes
         fake_networks = [
             {
                 "SSID": "Rede_Vizinho",
