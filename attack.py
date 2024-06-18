@@ -8,13 +8,13 @@ def clear_screen():
 def print_menu():
     clear_screen()
     print("=====================================")
-    print("       Simulador Hacker Termux       ")
+    print("       MENU HACKER      ")
     print("=====================================")
-    print("1. Simular ataque DDoS")
-    print("2. Simular varredura de portas")
-    print("3. Simular exploit")
-    print("4. Simular ataque em redes sociais")
-    print("5. Simular ataque em redes Wi-Fi")
+    print("1. ataque DDoS")
+    print("2. varredura de portas")
+    print("3. exploit")
+    print("4. ataque em redes sociais")
+    print("5. ataque redes Wi-Fi")
     print("6. Sair")
     print("=====================================")
 
@@ -26,7 +26,7 @@ def simulate_ddos():
     time.sleep(1)
     print("Enviando pacotes...")
     time.sleep(3)
-    print("Ataque DDoS simulado concluído.")
+    print("Ataque DDoS concluído.")
     input("Pressione Enter para voltar ao menu...")
 
 def simulate_port_scan():
@@ -38,7 +38,7 @@ def simulate_port_scan():
     for port in range(20, 25):
         print(f"Porta {port}: aberta")
         time.sleep(0.5)
-    print("Varredura de portas simulada concluída.")
+    print("Varredura de portas concluída.")
     input("Pressione Enter para voltar ao menu...")
 
 def simulate_exploit():
@@ -49,12 +49,12 @@ def simulate_exploit():
     time.sleep(1)
     print("Explorando vulnerabilidade...")
     time.sleep(3)
-    print("Exploit simulado concluído.")
+    print("Exploit concluído.")
     input("Pressione Enter para voltar ao menu...")
 
 def simulate_social_media_attack():
     clear_screen()
-    print("Escolha uma rede social para simular o ataque:")
+    print("Escolha uma rede social para o ataque:")
     print("1. Instagram")
     print("2. Facebook")
     print("3. Twitter")
@@ -91,7 +91,7 @@ def simulate_social_media_attack():
             {
                 "Nome Completo": "João Silva",
                 "Data de Nascimento": "01/01/1990",
-                "Número de Telefone": "+55 11 91234-5678",
+                "Número de Telefone secundário": "+55 11 91234-5678",
                 "E-mail": "joao.silva@example.com",
                 "Endereço": "Rua Exemplo, 123, São Paulo, SP",
                 "Senha": "senha123",
@@ -102,7 +102,7 @@ def simulate_social_media_attack():
             {
                 "Nome Completo": "Maria Oliveira",
                 "Data de Nascimento": "15/05/1985",
-                "Número de Telefone": "+55 21 98765-4321",
+                "Número de Telefone secundário": "+55 21 98765-4321",
                 "E-mail": "maria.oliveira@example.com",
                 "Endereço": "Avenida Central, 456, Rio de Janeiro, RJ",
                 "Senha": "minhasenha",
@@ -113,7 +113,7 @@ def simulate_social_media_attack():
             {
                 "Nome Completo": "Carlos Pereira",
                 "Data de Nascimento": "23/03/1975",
-                "Número de Telefone": "+55 31 99876-5432",
+                "Número de Telefone secundário": "+55 31 99876-5432",
                 "E-mail": "carlos.pereira@example.com",
                 "Endereço": "Rua das Flores, 789, Belo Horizonte, MG",
                 "Senha": "segredinho",
@@ -124,7 +124,7 @@ def simulate_social_media_attack():
             {
                 "Nome Completo": "Ana Costa",
                 "Data de Nascimento": "30/08/1995",
-                "Número de Telefone": "+55 41 92345-6789",
+                "Número de Telefone secundário": "+55 41 92345-6789",
                 "E-mail": "ana.costa@example.com",
                 "Endereço": "Praça da Liberdade, 101, Curitiba, PR",
                 "Senha": "senha789",
@@ -169,11 +169,11 @@ def simulate_wifi_attack():
         clear_screen()
         print(f"Iniciando ataque em rede {attacks[choice]}...")
         time.sleep(2)
-        print(f"Escaneando redes {attacks[choice]} disponíveis...")
+        print(f"Escaneando redes ao redor {attacks[choice]} disponíveis...")
         time.sleep(3)
         print(f"Explorando vulnerabilidades em redes {attacks[choice]}...")
         time.sleep(3)
-        print(f"Ataque em rede {attacks[choice]} simulado concluído.")
+        print(f"Ataque em rede {attacks[choice]} concluído.")
         time.sleep(2)
 
         # Informações simuladas sobre redes
