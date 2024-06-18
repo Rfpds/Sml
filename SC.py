@@ -13,18 +13,17 @@ def sms_spam():
     print(f"\nEnviando {quantidade} SMS para {numero_alvo}...")
     print(f"'{mensagem}'\n")
 
-    # Simulação do envio dos SMS (pode ser implementado de fato se necessário)
+    # envio dos SMS (pode ser implementado de fato se necessário)
     for _ in range(quantidade):
         print(f"Enviando SMS para {numero_alvo}...")
-        # Aqui você pode adicionar a lógica para simular o envio de SMS
-
+        
     input("\nPressione Enter para continuar.")
 
 def link_phishing():
     print("\n=== Verificação de Link Phishing ===")
     url = input("Digite a URL a verificar: ")
 
-    # Simulação de verificação se o site é malicioso ou limpo
+    #verificação se o site é malicioso ou limpo
     if random.random() < 0.5:
         print(f"\nO site '{url}' é considerado MALICIOSO!")
     else:
@@ -37,11 +36,11 @@ def quebra_senha():
     print("Conecte o cabo USB ao dispositivo alvo...")
     input("Pressione Enter quando estiver pronto para continuar...")
 
-    # Simulação de quebra de senha (dados simulados)
+    #quebra de senha (dados simulados)
     print("\nQuebrando senha...")
     print("Dados do usuário obtidos:")
     print("Username: johndoe")
-    print("Password: ********")  # Aqui você pode simular a senha obtida
+    print("Password: ********") 
 
     input("\nPressione Enter para continuar.")
 
@@ -51,10 +50,10 @@ def menu():
         os.system('clear')
 
         # Exibir o menu
-        print("=== Simulador Hacker ===")
+        print("=== Menu Hacker ===")
         print("1. SMS Spam")
         print("2. Link Phishing")
-        print("3. Quebra de Senha por Força Bruta")
+        print("3. Quebra de Senha")
         print("0. Sair")
 
         # Obter a escolha do usuário
